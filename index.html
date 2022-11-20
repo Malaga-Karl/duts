@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@1,300&family=Dongle:wght@300&family=Mukta:wght@300&family=Roboto+Condensed&family=Staatliches&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+
+    <script src="javascript/script.js"></script>
+</head>
+
+<body onload="renderTime();">
+
+    <!-- Clock -->
+
+    <div id="clockDisplay" class="container"></div>
+
+    <!-- BANNER -->
+    <header id="header" style="background-image: url('campus.jpg');">
+        <div class="logo">
+            <a href="#" target="_blank"><img src="images/logo.png" alt="logo"></a>
+        </div>
+        <div class="name">
+            <h1>Dioses University of Technology and Science</h1>
+        </div>
+    </header>
+    <img src="images/campus.jpg" alt="" id="campus">
+    <nav class="navbar">
+        <div class="nav">
+            <ul>
+                <li><a href="#" id="home">Home</a></li>
+                <li id="about"><a href="html/about.html">About</a></li>
+                <li id="courses"><a href="html/Courses.html">Courses</a></li>
+                <li id="alumni"><a href="html/Alumni.html">Alumni</a></li>
+                <li id="contacts"><a href="html/contact.html">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <br>
+    <hr>
+
+    <!-- Mission Statement -->
+    <div class="mission-statement">
+        <h2>Mission Statement</h2>
+        <p>DUT shall be capable of advanced education in all fields of study that the university provides. It should also give the students the ability to serve the societal and technological change that the country needs, by application of the mindset, values, and competencies that they have fostered within the university.</p>
+    </div>
+
+    <!-- Sliding Pictures -->
+    <div class="slider-frame">
+        <div class="slide-images">
+            <div class="img-container">
+               <img src="images/pic1.jpeg" alt="pic1"> 
+            </div>
+            <div class="img-container">
+                <img src="images/pic2.jpg" alt="pic1"> 
+             </div>
+             <div class="img-container">
+                <img src="images/pic3.jpg" alt="pic1"> 
+             </div>
+             <div class="img-container">
+                <img src="images/pic4.jpg" alt="pic1"> 
+             </div>
+             <div class="img-container">
+                <img src="images/pic5.jpg" alt="pic1"> 
+             </div>
+        </div>
+    </div>
+
+    <!-- Why University -->
+    <div class="why">
+        <h2>Why D.U.T.S.?</h2>
+        <p>Dioses University of Technology and Science (D.U.T.S.) is the first and only premier private university that has free tuition in the Philippines, as it is completely funded by its founder, Professor Raymund Dioses.
+        DUTS is also the only university in the Philippines that has a 100% passing rate in midterms and finals exams of its students. As of 2022, it has also produced five students that are competent in the field of technology, and are active contributors to the advancement of the nation. The university has pledged itself to the development of its students with the objective of guiding them to become the future of the country's progress and industry.</p>
+    </div>
+
+    <hr id="horizontal">
+    <div id="content">
+        <!-- News -->
+        <h1 id="news">News</h1>
+        <div class="news">
+            <div class="row-1">
+                <a href="html/fake.html">
+                    <div style="background-image: url(images/covid.png);"></div>
+                </a>
+                <a href="html/fake.html">
+                    <div style="background-image: url(images/coding.png);"></div>
+                </a>
+                <a href="html/fake.html">
+                    <div style="background-image: url(images/odette.png);"></div>
+                </a>
+            </div>
+            <br>
+            <br>
+            <div class="row-2">
+                <a href="html/fake.html">
+                    <div style="background-image: url(images/students.png);"></div>
+                </a>
+                <a href="html/fake.html">
+                    <div style="background-image: url(images/vax.png);"></div>
+                </a>
+                <a href="html/fake.html">
+                    <div style="background-image: url(images/dost.png);"></div>
+                </a>
+            </div>
+        </div>
+    
+        <!-- Events -->
+        <h1 id="events">Events</h1>
+        <div class="events">
+            <div class="event1">
+                <a href="html/fake.html">
+                    <div>Jan 2, 2022 <br> First Mass of 2022</div>
+                </a>
+                <a href="html/fake.html">
+                    <div>Jan 24, 2022 <br> Resume of Online Classes</div>
+                </a>
+            </div>
+            <br>
+            <br>
+            <div class="event2">
+                <a href="html/fake.html">
+                    <div>Feb 7-11, 2022 <br> Final Examinations</div>
+                </a>
+                <a href="html/fake.html">
+                    <div>Feb 12-13, 2022 <br> Freshmen Admission Interviews</div>
+                </a>
+            </div>
+            <br>
+            <br>
+            <div>
+                <a href="html/fake.html">
+                    <div>Feb 14, 2022 <br> Start of 2nd Semester</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <hr>
+
+    <footer>
+        <p style="text-transform: uppercase;">&copy; Copyright 2021 . Dioses University of Technology and Science. All rights reserved</p>
+        <p style="bottom: 30%;"><i class="fa fa-envelope"> </i> information@duts.edu.ph | &#127760; duts.edu.ph | &#9742; 0000.0000 | &#x1f4cc; Radial Rd 10, Smokey Mountain, Tondo, Manila, Metro Manila |  <a href="#">Back to Top</a></p>
+       
+    </footer>
+</body>
+</html>

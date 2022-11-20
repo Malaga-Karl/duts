@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@1,300&family=Dongle:wght@300&family=Mukta:wght@300&family=Oswald:wght@500&family=Roboto+Condensed&family=Staatliches&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="../javascript/script.js"></script>
+  <title>About DUTS</title>
+  <style>
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: floralwhite;
+  }
+
+  #clockDisplay{
+      background-color: white;
+      text-align: center;
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: bold;
+      width: 300px;
+      border: 1px solid black;
+      margin-top: 10px;
+      margin-left: auto;
+      margin-right: 10px;
+      padding: 20px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+  }
+
+  .logo img{
+      position: absolute;
+      top: 30px;
+      width: 300px;
+      height: auto;
+  }
+
+  .navbar{
+      position: sticky; 
+      top: 0; 
+      z-index: 20;
+  }
+  .name{
+      background-color: green;
+      width: auto;
+      margin-top: 40px;
+      padding: 1px;
+      padding-left: 450px;
+      color: white;
+      font-family: 'Barlow Semi Condensed', sans-serif;
+      letter-spacing: 5px;
+  }
+
+  #campus{
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: -1;
+      clip: rect(0px, 2000px, 295px, 0px);
+      opacity: .7;
+  }
+
+  .nav ul{
+      display: flex;
+      background-color: white;
+      margin-top: 0;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 15px 0px 20px 0px;
+      width: max-content;
+      border: 1px black solid;
+      border-radius: 10px;
+      
+  }
+  .nav ul li{
+      list-style: none;
+      margin: 0;
+  }
+  .nav ul li a{
+      text-decoration: none;
+      padding: 15px 50px 20px 50px;
+      border-radius: 5px;
+      font-family: 'Staatliches', cursive;
+      color: black;
+      transition: linear .25s;
+  }
+
+  .nav ul li a:hover{
+      background-color: green;
+      color: white;
+      border-radius: 5px;
+  }
+
+  .header {
+    padding: 1px;
+    text-align: center;
+    background: #024064;
+    color: white;
+  }
+
+  .header h1 {
+    font-size: 40px;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #99ba13;
+  }
+
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav a:hover {
+    background-color: #f2f2f2;
+    color: black;
+  }
+
+  .topnav a.active {
+    background-color: #038591;
+    color: white;
+  }
+
+  img.floatLeft1 {
+    float: left;
+    margin: 4px;
+    width: 150px;
+    height: 150px
+  }
+
+  img.floatLeft2 {
+    float: left;
+    margin: 4px;
+    width: 147px;
+    height: 200px
+  }
+
+  img.floatLeft3 {
+    float: left;
+    margin: 4px;
+    width: 211px;
+    height: 143px
+  }
+
+  table {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+  }
+
+  td, th {
+    border: 1px solid #9fd983;
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #fefed3;
+  }
+
+  #about::after{
+      content: ' ';
+      height: 2px;
+      width: 40px;
+      background-color: black;
+      position: absolute;
+      left: 38.3%;
+      top: 70%;
+  }
+
+  .title{
+    background: green;
+    color: white;
+    text-align: center;
+    margin-top: 44px;
+    padding: 10px 0px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .content div:nth-child(odd){
+    background-image: radial-gradient(rgb(255, 255, 255), rgb(245, 241, 241));
+    border: green solid 2px;
+    border-radius: 20pt;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
+
+  .content div:nth-child(even){
+    background-image: radial-gradient(rgb(8, 170, 8), green);
+    border: black solid 2px;
+    border-radius: 20pt;
+    color: white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
+
+  .content div h2{
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  footer{
+    background-color: rgb(44, 44, 44);
+    height: 70px;
+    color: white;
+    text-align: left;
+    font-family: 'Dongle', sans-serif;
+    font-size: 20px;
+  }
+  footer p{
+      position: relative;
+      margin-left: 50px;
+  }
+  </style>
+</head>
+<body onload="renderTime();">
+
+  <!-- Clock -->
+
+  <div id="clockDisplay" class="container"></div>
+
+  <!-- BANNER -->
+  <header id="header" style="background-image: url('campus.jpg');">
+      <div class="logo">
+          <a href="#" target="_blank"><img src="..//images/logo.png" alt="logo"></a>
+      </div>
+      <div class="name">
+          <h1>Dioses University of Technology and Science</h1>
+      </div>
+  </header>
+  <img src="../images/campus.jpg" alt="" id="campus">
+  <nav class="navbar">
+      <div class="nav">
+          <ul>
+              <li><a href="../index.html"">Home</a></li>
+              <li><a href="about.html" id="about">About</a></li>
+              <li id="courses"><a href="Courses.html">Courses</a></li>
+              <li id="alumni"><a href="Alumni.html">Alumni</a></li>
+              <li id="contacts"><a href="contact.html">Contacts</a></li>
+          </ul>
+      </div>
+  </nav>
+
+  
+  <h1 class="title">About D.U.T.S</h1>
+
+<div class="content">
+  <div>
+    <h2>University Profile</h2>
+    <p>Dioses University of Technology and Science (D.U.T.S.) is the first and only premier private university that has free tuition in the Philippines, as it is completely funded by its founder, Professor Raymund Dioses. It was founded in December 22, 2021 with the intention of helping students reach their full potential in technological excellence, thereby advancing the progress of the country's industry.<br><br>
+  
+    DUTS is also the only university in the Philippines that has a 100% passing rate in midterms and finals exams of its students. As of 2022, it has also produced five students that are competent in the field of technology, and are active contributors to the advancement of the nation. Aside from this, these five students are also coincidentally the only five staff members of the university, which is an unprecedented historical feat worldwide.<br><br> 
+  
+    Before the foundation of the University, its site also holds historical significance. Well-known establishments, such as Aling Dolores' carinderia, Mang Carding's junk shop, and Jhovotskie's Pares Mami House stood within its place beforehand. <br> <br>
+  
+    The founder opened its first and currently only branch, DUT Manila at H. Ventura Street, Sampaloc, Manila. However, due to the ongoing pandemic, the classes are currently only held online, with hopes of finally using the facilities soon.
+  </div>
+
+  <br><br>
+
+  <div>
+    <h2>Vision and Mission</h2>
+    <h3>Vision</h3>
+    <p>We envision DUT as a premier university in technology, providing the tools necessary in order to elevate the capabilities of our students within the fields of engineering, computing, and other allied disciplines.</p>
+    <h3>Mission</h3>
+    <p>DUT shall be capable of advanced education in all fields of study that the university provides. It should also give the students the ability to serve the societal and technological change that the country needs, by application of the mindset, values, and competencies that they have fostered within the university.</p>
+  
+  </div>
+  
+  <br>
+  <br>
+  <div>
+    <h2>History</h2>
+    <p> Professor Raymund Dioses had a dream that he wanted to accomplish, which is to be able to start a university of his own, wherein he could be able to Filipino students in the realization of their potential in the field of technology. WIth this in mind, the Dioses University of Technology, which is a private non-sectarian school, came to be on December 5, 2021.<br><br>
+  
+    DUT prioritized the goals that its founder conceptualized: 1) to consistently provide high quality free education 2) to accept students based mainly on their academic capability and character 3) to implement innovative methods to improve education.<br><br>
+  
+    The university has pledged itself to the development of its students with the objective of guiding them to become the future of the country's progress and industry. Professor Dioses first focused on offering engineering and technology courses exclusively, which included Civil Engineering, Information Technology, and Computer Science. However, he wanted the university to accomodate a diverse pool of students, so he also included different colleges, which consists of Education, Science, Architecture, and Business. 
+      </p>
+  </div>
+
+  <br><br>
+
+  <div>
+    <h2>Raymund Dioses</h2>
+    <img src="../images/Dioses.jpg" alt="Professor Raymund Dioses" class="floatLeft1" style="border-radius: 10pt; border: black 2px solid;">
+    <p> Having a Bachelor's in Computer Science and a Master's Degree in Educational Management, Professor Raymund Dioses had mastery in both technology and education. Before being able to be a founder of his own university, he started from humble beginnings. He was first an instructor at Core Gateway College on November 2005, which is a school in Nueva Ecija where he also got his Master's Degree from. He then became a chairperson in the college, as they have recognized his outstanding talent in his teaching skills. By June 2013, he started to offer his talents elsewhere, as he then became an IT Librarian at Saudi Aramco, which is a Saudi Arabian public petroleum and natural gas company. After working there for 8 years, Professor Dioses then decided that his capabilities are best utilized in the Philippines, becoming an instructor for Pamantasan ng Lungsod ng Maynila on March 2021. However, after months of working in the public university, he then realized a plan wherein he could offer more opportunities towards other students that are inclined in technology, which lead to the conception of Dioses University of Technology on December 2021.</p>
+  </div>
+
+  <br><br>
+  
+  <div style="width: 40%;">
+    <h2>Accreditations</h2>
+    <h3>2013 Institutional Accreditation Status for DLSU</h3>
+    <img src="../images/FAAP.png" alt="FAAP" class="floatLeft2">
+    <p>
+    The Federation of Accrediting Agencies of the Philippines (FAAP) awards the 2022 Institutional Accreditation Status to DUT, for its long tradition of exemplary accomplishments in the areas of instruction, research, community service and high performance of its graduates in licensure examinations; for the laudable practices leading to internal efficiency and external productivityl for its meritorious record of excellence as evidenced by its high level of program accreditation and effective internal quality assurance mechanisms.
+    </p>
+      <p>   
+    This status is effective until OCTOBER 2025.<br><br>
+      </p>
+      <h3>Full Autonomy Status (CHED)</h3>
+      <img src="../images/ched.png" alt="ched" class="floatLeft3">
+      <br><br><br><br><br><br><br><br>
+  </div>
+</div>
+
+  <br><br>
+  <div style="text-align: center;">
+    <h3>List of FAAP Accredited Status</h3>
+  <table>
+    <tr>
+      <th>Course/Degree</th>
+      <th>Level</th>
+      <th>Validity</th>
+    </tr>
+    <tr>
+      <td>Bachelor of Science in Architecture</td>
+      <td>I</td>
+      <td>December 2021</td>
+    </tr>
+    <tr>
+      <td>Bachelor of Science in Accountancy</td>
+      <td>I</td>
+      <td>December 2021</td>
+    </tr>
+    <tr>
+      <td>Bachelor of Science in Business Administration Major in Business Economics</td>
+      <td>II</td>
+      <td>December 2021</td>
+    </tr>
+    <tr>
+      <td>Bachelor of Science in Business Administration Major in Human Resource Management</td>
+      <td>II</td>
+      <td>December 2021</td>
+    </tr>
+    <tr>
+      <td>Bachelor of Science in Business Administration Major in Marketing Management</td>
+      <td>III</td>
+      <td>December 2021</td>
+    </tr>
+    <tr>
+      <td>Bachelor of Science in Entrepreneurship</td>
+      <td>III</td>
+      <td>December 2021</td>
+    </tr>
+    <tr>
+      <td>Bachelor of Secondary Education major in Mathematics</td>
+      <td>III</td>
+      <td>December 2021</td>
+    </tr>
+    <tr>
+      <td>Bachelor of Secondary Education major in Sciences</td>
+      <td>III</td>
+      <td>December 2021</td>
+    </tr>
+    <tr>
+      <td>Bachelor of Science in Civil Engineering</td>
+      <td>III</td>
+      <td>December 2021</td>
+    </tr>
+    <tr>
+      <td>Bachelor of Science in Computer Engineering</td>
+      <td>III</td>
+      <td>December 2021</td>
+    </tr>
+    <tr>
+      <td>Bachelor of Science in Computer Science</td>
+      <td>III</td>
+      <td>December 2021</td>
+    </tr>
+    <tr>
+      <td>Bachelor of Science in Electronics Engineering</td>
+      <td>III</td>
+      <td>December 2021</td>
+    </tr>
+    <tr>
+      <td>Bachelor of Science in Information Technology</td>
+      <td>III</td>
+      <td>December 2021</td>
+    </tr>
+    <tr>
+      <td>Bachelor of Science in Chemistry</td>
+      <td>III</td>
+      <td>December 2021</td>
+    </tr>
+    <tr>
+      <td>Bachelor of Science in Mathematics</td>
+      <td>III</td>
+      <td>December 2021</td>
+    </tr>
+  </table><br><br>
+  <h2>LOCATION MAP</h2>
+  <img src="../images/map.png" alt="map" width=80% height=80%>
+  
+  <footer>
+    <p style="text-transform: uppercase;">&copy; Copyright 2021 . Dioses University of Technology and Science. All rights reserved</p>
+    <p style="bottom: 30%;"><i class="fa fa-envelope"> </i> information@duts.edu.ph | &#127760; duts.edu.ph | &#9742; 0000.0000 | &#x1f4cc; Radial Rd 10, Smokey Mountain, Tondo, Manila, Metro Manila</p>
+  </footer>
+
+
+
+</body>
+</html>

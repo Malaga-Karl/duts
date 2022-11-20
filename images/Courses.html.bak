@@ -1,0 +1,194 @@
+<HTML>
+<HEAD>
+<TITLE>Undergraduate Courses</TITLE>
+</HEAD> 
+<BODY> 
+<h1>Dioses University of Technology</h1><style>h1{text-align:center;}</style>
+<style>
+ul
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+li 
+{
+  float: left;
+}
+
+li a 
+{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+}
+
+li a:hover 
+{
+  background-color: gray;
+}
+</style>
+<style>
+div.a {
+  line-height: 2.0;
+}
+h2 {
+  border: 2.5px solid black;
+  border-radius: 10px;
+}
+h3 {
+  border-left-style: double;
+}
+</style>
+<ul>
+<li><a href="#home">Home</a> <br></li> 
+<li><a href="#about>About</a> <br></li> 
+<li><a href="file:///C:/Website-courses/Courses.html">Courses</a> <br></li> 
+<li><a href="#Alumni">Alumni</a> <br></li> 
+<li><a href="#Contacts">Contacts</a> <br></li>
+</ul><hr style="height:5px;border-width:0;color:gray;background-color:gray"> 
+
+<h2>Undergraduate Courses</h2><style>h2{text-align:center;}</style><br>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+</style>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="Architecture.png" align="right"style="width:50%">
+</div>
+
+<div class="mySlides fade">
+  <img src="Business.png" align="right"style="width:50%">
+</div>
+
+<div class="mySlides fade">
+  <img src="Educ.png" align="right"style="width:50%">
+</div>
+
+<div class="mySlides fade">
+  <img src="Engineering.png" align="right"style="width:50%">
+</div>
+
+<div class="mySlides fade">
+  <img src="IT.png" align="right"style="width:50%">
+</div>
+
+<div class="mySlides fade">
+  <img src="Chem.png" align="right"style="width:50%">
+</div>
+
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000);
+}
+</script>
+<h3> College of Architecture</h3><style>h3{margin:20;}</style>
+<ol style="margin:20;"type="I">
+  <li>Bachelor of Science in Architecture - BS Arch</li>
+</ol><br><br>
+<hr style="width:45%;margin-left:15">
+
+<h3>College of Business</h3>
+<ol style="margin:20;"type="I">
+ <div class="a"> 
+  <li>Bachelor of Science in Accountancy - BS ACCTG</li><br>
+  <li>Bachelor of Science in Business Administration Major in Business Economics <br>- BSBA BE</li><br>
+  <li>Bachelor of Science in Business Administration Major in Human Resource Management <br>- BSBA HRM</li><br>
+  <li>Bachelor of Science in Business Administration Major in Marketing Management <br>- BSBA MM</li><br>
+  <li>Bachelor of Science in Entrepreneurship - BS ENTRE</li><br>
+ </div>
+</ol><br><hr style="width:45%;margin-left:15">
+
+<h3>College of Education</h3>
+<ol style="margin:20;"type="I">
+ <div class="a">
+  <li>Bachelor of Secondary Education major Mathematics - BSEd-Math</li><br>
+  <li>Bachelor of Secondary Education major in Sciences - BSEd-Sciences</li><br>
+ </div>
+</ol><hr style="width:45%;margin-left:15">
+
+<h3>College of Engineering and Technology</h3>
+<ol style="margin:20;"type="I">
+ <div class="a"> 
+  <li>Bachelor of Science in Civil Engineering - BSCE</li><br>
+  <li>Bachelor of Science in Computer Engineering - BS CPE</li><br>
+  <li>Bachelor of Science in Computer Science - BSCS</li><br>
+  <li>Bachelor of Science in Electronics Engineering - BS ECE</li><br>
+  <li>Bachelor of Science in Information Technology - BSIT</li><br>
+ </div>
+</ol><hr style="width:45%;margin-left:15">
+
+<h3>College of Science</h3>
+<ol style="margin:20;"type="I">
+ <div class="a"> 
+  <li>Bachelor of Science in Chemistry - BS Chem</li><br>
+  <li>Bachelor of Science in Mathematics - BS Math</li><br>
+ </div>
+</ol><hr style="width:45%;margin-left:15"><br><br><br>
+<hr style="height:5px;border-width:0;color:gray;background-color:gray">
+
+<ul style="margin:20;">
+ <div class="a"> 
+  <li>Address:</li><br>
+  <li>Telephone:</li><br>
+  <li>Email:</li><br>
+  <li>Website:</li><br>
+ </div>
+</ul>
+
+
+

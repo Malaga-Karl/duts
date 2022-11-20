@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DUT - Contacts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@1,300&family=Dongle:wght@300&family=Mukta:wght@300&family=Oswald:wght@500&family=Roboto+Condensed&family=Staatliches&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../javascript/script.js"></script>
+    <style>
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+tr:nth-child(odd){
+  background-color: white ;
+}
+
+        body 
+        {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: floralwhite;
+        }
+        #campus{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: -1;
+            clip: rect(0px, 2000px, 295px, 0px);
+            opacity: .7;
+        }
+        #clockDisplay{
+            background-color: white;
+            text-align: center;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: bold;
+            width: 300px;
+            border: 1px solid black;
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: 10px;
+            padding: 20px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+        }
+
+        .logo img{
+            position: absolute;
+            top: 30px;
+            width: 300px;
+            height: auto;
+        }
+
+        .navbar{
+            position: sticky; 
+            top: 0; 
+            z-index: 20;
+        }
+        .name{
+            background-color: green;
+            width: auto;
+            margin-top: 40px;
+            padding: 1px;
+            padding-left: 450px;
+            color: white;
+            font-family: 'Barlow Semi Condensed', sans-serif;
+            letter-spacing: 5px;
+        }
+
+        .nav ul{
+            display: flex;
+            background-color: white;
+            margin-top: 0;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 15px 0px 20px 0px;
+            width: max-content;
+            border: 1px black solid;
+            border-radius: 10px;
+            
+        }
+        .nav ul li{
+            list-style: none;
+            margin: 0;
+        }
+        .nav ul li a{
+            text-decoration: none;
+            padding: 15px 50px 20px 50px;
+            border-radius: 5px;
+            font-family: 'Staatliches', cursive;
+            color: black;
+            transition: linear .25s;
+        }
+
+        .nav ul li a:hover{
+            background-color: green;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .header 
+        {
+            padding: 1px;
+            text-align: center;
+            background: #024064;
+            color: white;
+        }
+
+        .header h1 
+        {
+            font-size: 40px;
+        }
+
+        .topnav 
+        {
+            overflow: hidden;
+            background-color: #99ba13;
+        }
+
+        .topnav a 
+        {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 15px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover 
+        {
+            background-color: #f2f2f2;
+            color: black;
+        }
+
+        .topnav a.active 
+        {
+            background-color: #038591;
+            color: white;
+        }
+
+        body 
+        {font-family: Arial, sans-serif;
+        box-sizing: border-box;
+        }
+        
+
+        input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+        }
+
+        input[type=submit] {
+        background-color: #038591;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+        background-color: #99ba13;
+        }
+
+        .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        }
+        #form-cont{
+          margin: 0px 30px;
+        }
+        #contacts::after{
+          content: ' ';
+          height: 2px;
+          width: 40px;
+          background-color: black;
+          position: absolute;
+          right: 30.55%;
+          top: 70%;
+        }
+        .title{
+          background: green;
+          color: white;
+          text-align: center;
+          margin-top: 44px;
+          padding: 10px 0px;
+          font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+          text-transform: uppercase;
+        }
+        footer{
+            background-color: rgb(44, 44, 44);
+            height: 70px;
+            color: white;
+            text-align: left;
+            font-family: 'Dongle', sans-serif;
+            font-size: 20px;
+        }
+        footer p{
+            position: relative;
+            margin-left: 50px;
+        }
+</style>
+</head>
+
+<body onload="renderTime();">
+
+  <!-- Clock -->
+
+  <div id="clockDisplay" class="container"></div>
+
+  <!-- BANNER -->
+  <header id="header" style="background-image: url('campus.jpg');">
+      <div class="logo">
+          <a href="#" target="_blank"><img src="../images/logo.png" alt="logo"></a>
+      </div>
+      <div class="name">
+          <h1>Dioses University of Technology and Science</h1>
+      </div>
+  </header>
+  <img src="../images/campus.jpg" alt="" id="campus">
+  <nav class="navbar">
+      <div class="nav">
+          <ul>
+              <li><a href="../index.html" id="home">Home</a></li>
+              <li id="about"><a href="about.html">About</a></li>
+              <li id="courses"><a href="Courses.html">Courses</a></li>
+              <li id="alumni"><a href="Alumni.html">Alumni</a></li>
+              <li><a href="contact.html" id="contacts">Contacts</a></li>
+          </ul>
+      </div>
+  </nav>
+<h1 align="center" class="title">CONTACT US</h1>
+<div align="center">
+    <table width="1000" height="1000" cellspacing="5">
+      <tbody>
+        <tr>
+          <th>LOCAL</th>
+          <th height="25">NAME OF OFFICE</th>
+          <th height="25">DIRECT LINE</th>
+          <th height="25">EMAIL</th>
+          
+        </tr>
+        <tr>
+          <td>200</td>
+          <td>Information</td>
+          <td>0000.0000</td>
+          <td>information@dut.edu.ph</td>
+
+        </tr>
+        <tr>
+          <td>201</td>
+          <td>Admissions Office</td>
+          <td>1111.1111</td>
+          <td>admissions@dut.edu.ph</td>
+
+        </tr>
+        <tr>
+          <td>202</td>
+          <td>Registrar's Office</td>
+          <td>2222.2222</td>
+          <td>registrar@dut.edu.ph</td>
+        </tr>
+
+        <tr>
+          <td>203</td>
+          <td>Office of the President</td>
+          <td>3333.3333</td>
+          <td>president@dut.edu.ph</td>
+        </tr>
+
+        <tr>
+          <td>204</td>
+          <td>General Services</td>
+          <td>4444.4444</td>
+          <td>genservice@dut.edu.ph</td>
+        </tr>
+        <tr>
+          <td>205</td>
+          <td>Finance Services</td>
+          <td>5555.5555</td>
+          <td>finance@dut.edu.ph</td>
+        </tr>
+        <tr>
+          <td>206</td>
+          <td>Student Services</td>
+          <td>6666.6666</td>
+          <td>studservices@dut.edu.ph</td>
+        </tr>
+        <tr>
+          <td>207</td>
+          <td>College of Architecture</td>
+          <td>7777.7777</td>
+          <td>ca@dut.edu.ph</td>
+        </tr>
+        <tr>
+          <td>208</td>
+          <td>College of Business</td>
+          <td>8888.8888</td>
+          <td>cb@dut.edu.ph</td>
+        </tr>
+        
+        <tr>
+          <td>209</td>
+          <td>College of Education</td>
+          <td>9999.9999</td>
+          <td>ce@dut.edu.ph</td>
+        </tr>
+        
+        <tr>
+          <td>210</td>
+          <td>College of Engineering and Technology</td>
+          <td>1010.1010</td>
+          <td>cet@dut.edu.ph</td>
+        </tr>
+        
+        
+        <tr>
+          <td>211</td>
+          <td>College of Science</td>
+          <td>0101.0101</td>
+          <td>cs@dut.edu.ph</td>
+        </tr>
+
+        <tr>
+          <td>212</td>
+          <td>Alumni Office</td>
+          <td>1212.1212</td>
+          <td>alumni@dut.edu.ph</td>
+        </tr>
+
+        <tr>
+          <td>213</td>
+          <td>Canteen</td>
+          <td>1313.1313</td>
+          <td>canteen@dut.edu.ph</td>
+        </tr>
+
+        <tr>
+          <td>214</td>
+          <td>Computer Laboratories</td>
+          <td>1414.1414</td>
+          <td>ict@dut.edu.ph</td>
+        </tr>
+
+        <tr>
+          <td>215</td>
+          <td>Faculty Room</td>
+          <td>1515.1515</td>
+          <td>faculty@dut.edu.ph</td>
+        </tr>
+
+        <tr>
+          <td>216</td>
+          <td>Guidance Services</td>
+          <td>1616.1616</td>
+          <td>guidance@dut.edu.ph</td>
+        </tr>
+
+        <tr>
+          <td>217</td>
+          <td>Health Services</td>
+          <td>1717.1717</td>
+          <td>health@dut.edu.ph</td>
+        </tr>
+
+        <tr>
+          <td>218</td>
+          <td>Human Resource Services</td>
+          <td>1818.1818</td>
+          <td>hr@dut.edu.ph</td>
+        </tr>
+
+        <tr>
+          <td>219</td>
+          <td>Information Technology Services</td>
+          <td>1919.1919</td>
+          <td>ict@dut.edu.ph</td>
+        </tr>
+
+        <tr>
+          <td>220</td>
+          <td>Library Services</td>
+          <td>2020.2020</td>
+          <td>libservices@dut.edu.ph</td>
+        </tr>
+    
+        <tr>
+          <td>221</td>
+          <td>Student Government</td>
+          <td>2121.2121</td>
+          <td>studgov@dut.edu.ph</td>
+        </tr>
+
+        <tr>
+            <td>222</td>
+            <td>Office of the Vice President</td>
+            <td>0222.0222</td>
+            <td>vpresident@dut.edu.ph</td>
+        </tr>
+
+        <tr>
+            <td>223</td>
+            <td>Research and Development Center</td>
+            <td>2323.2323</td>
+            <td>rsdev@dut.edu.ph</td>
+        </tr>
+
+        <tr>
+            <td>224</td>
+            <td>Security</td>
+            <td>2424.2424</td>
+            <td>security@dut.edu.ph</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+<br>
+  <h3 style="text-align: center;">Contact Form</h3>
+
+  <div class="container" id="form-cont">
+    <form>
+      <label>First Name</label>
+      <input type="text" name="firstname" placeholder="Your full name..">
+  
+      <label>Contact Number</label>
+      <input type="text" name="lastname" placeholder="Your contact number..">
+  
+      <label>Email address</label>
+      <input type="text" name="lastname" placeholder="Your email address..">
+  
+      <label>Subject</label>
+      <textarea name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  <footer>
+    <p style="text-transform: uppercase;">&copy; Copyright 2021 . Dioses University of Technology and Science. All rights reserved</p>
+    <p style="bottom: 30%;"><i class="fa fa-envelope"> </i> information@duts.edu.ph | &#127760; duts.edu.ph | &#9742; 0000.0000 | &#x1f4cc; Radial Rd 10, Smokey Mountain, Tondo, Manila, Metro Manila</p>
+  </footer>
+  </body>
+  </html>
